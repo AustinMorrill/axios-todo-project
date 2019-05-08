@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<link rel='stylesheet' href='styles.css'>
 </head>
+
 <body>
-	<div class="edit-popup">
-		<input type="text" name="" class="edit-item">
-		<button class="btn-update">Update</button>
-	</div>
-	<div class="container">
-		<div class="sections">
-		</div>
-		<div class="items">
-			<ul class="list-items">
+	<form name="addTodo" id="addTodo">
+		<label class="label" form="addTodo">Task title:</label>
+		<input type="text" class="input" name="newTitle" id="newTitle" maxlength="30" size="15"
+			placeholder="Enter New Todo title" /><br />
+		<label class="label" form="addTodo">Description:</label>
+		<input class="input" name="newDescription" id="newDescription" type="text" maxlength="300" size="50"
+			placeholder="New Todo description" />
+		<br />
+		<label class="label" form="addTodo">Price:</label>
+		<input type="number" class="input" name="newPrice" id="newPrice" min="0" max="9999999999" 		placeholder="New Todo Price" />
+		<br />
+		<label class="label" form="addTodo">Task Image URL:</label>
+		<input type="url" class="input" name="newImage" id="newImage"
+			value="https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+		<br />
+		<input type="submit" value="submit">
+	</form>
 
-			</ul>
-		</div>
-	</div>
-<!-- <form name='addTodo'>
-	<input type='text'>
-	<button></button>
-</form> -->
-
-	<div id="main"></div>
+	<div id="todoList" class="todoList"></div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script src="app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,46 @@
+img {
+	width: 80%;
+}
+
+.todoList {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200pt, 1fr))
+}
+.title {
+	display: inline-block
+}
+
+.completeCheckBox {
+	display: inline-block;
+}
+
+.todoItem {
+	display: flex;
+	flex-direction: column;
+	border: solid black 1pt;
+	border-radius: 15pt;
+	margin: 15pt;
+	justify-content: right;
+	align-content: right;
+	text-align: center;
+}
+
+button {
+	width: 50pt;
+	display: inline-block;
+}
+
+
+.input {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.label {
+	margin: 10px;
+}
